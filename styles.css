@@ -199,3 +199,74 @@ div.cta button{
         font-weight: 500;
     }
 }
+
+
+section{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 46px;
+    align-items: center;
+    border-top: 8px solid #222;
+    text-align: center;
+    height: 500px;
+}
+@media screen and (min-width:550px) {
+    section{
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+       
+    }
+}
+section.last{
+    border-bottom: 8px solid #222;
+}
+section div.texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    text-align: start;
+    padding-inline: 30px;
+}
+section div.texts h1{
+    font-size: 1.625rem;
+    margin-bottom: 20px;
+}
+@media screen and (min-width:550px) {
+    section div.texts h1{
+        font-size: 3.125rem;
+    }
+}
+section div.texts p{
+    font-size: 1rem;
+}
+@media screen and (min-width:550px) {
+    section div.texts p{
+        font-size: 1.4rem;
+    }
+}
+.media{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    margin-left: -30px;
+}
+
+.media.s1 img{
+    width: 550px;
+    position:absolute;
+    z-index: 10;
+}
+.media.s1 video{
+    width: 90%;
+    position:absolute;
+    z-index: 9;
+    margin-top: 50px;
+}
+
+/* @media screen and (min-width:550px) {
+    section:nth-child(even) div.texts {
+    }
+} */
