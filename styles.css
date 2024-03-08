@@ -1,0 +1,201 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: #000;
+    color:#fff;
+}
+header{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    padding: 26px 20px;
+    position:absolute;
+    width: 100%;
+    z-index: 5;
+}
+@media screen and (min-width:550px) {
+    header{
+        padding: 26px 56px;
+    }
+}
+
+header a.logo{
+    display: block;
+}
+header .logo svg{
+    fill: #e50914;
+    height: 27px;
+    margin-left: -30px;
+}
+@media screen and (min-width:550px) {
+    header .logo svg{
+        height: 40px;
+    }
+
+}
+header div+div {
+    text-align: right;
+}
+header a.button{
+    display: inline-block;
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 10px;
+    border-radius: 4px;
+}
+header select{
+    background: transparent;
+    color:#fff;
+    padding: 6px 0px 6px 30px;
+    border-radius: 3px;
+    width: 120px;
+}
+header div.select{
+    display:inline-block;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+@media screen and (min-width:550px) {
+    header div.select{
+        margin-right: 30px;
+    }
+}
+header div.select .translate-icon{
+    position:absolute;
+    margin-top:6px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+div.splash{
+    position:relative;
+}
+div.splash div.gradient{
+    background: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    position:absolute;
+    inset:0;
+}
+div.splash div.background{
+    position:absolute;
+    z-index:1;
+    inset:0;
+}
+div.splash div.background img{
+    height:100%;
+    opacity: 0.6;
+    object-fit: cover;
+}
+div.splash div.content{
+    padding: 95px 20px;
+    max-width: 655px;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    position:relative;
+    z-index:3;
+}
+@media screen and (min-width:550px) {
+    div.splash div.content{
+        padding-top: 235px;
+        padding-bottom: 185px;
+    }
+}
+div.splash h1, div.splash h2, div.splash h3{
+    font-weight: normal;
+}
+div.splash h1{
+    font-size: 1.75rem ;
+    font-weight: bold;
+}
+div.splash h2{
+    font-size: 1.125rem;
+    margin-top: 13px;
+    margin-bottom: 29px;
+}
+div.splash h3{
+    font-size: 1.125rem;
+}
+@media screen and (min-width: 550px) {
+    div.splash h1{
+        font-size: 3.125rem;
+        font-weight: bold;
+    }
+    div.splash h2{
+        font-size: 1.625rem;
+        margin-top: 13px;
+        margin-bottom: 29px;
+    }
+    div.splash h3{
+        font-size: 1.2rem;
+    }
+}
+
+div.cta form{
+    position:relative;
+    display:grid;
+    grid-template-columns: 1fr;
+    margin: 20px 20px 0;
+    row-gap: 15px;
+}
+@media screen and (min-width:550px) {
+    div.cta form{
+        display:grid;
+        grid-template-columns: 1fr max-content;
+    }
+}
+div.cta input{
+    padding: 15px 10px;
+    font-size:1.2rem;
+    width:100%;
+    background-color: #000;
+    opacity: 0.5;
+    border: 1px solid rgb(174, 174, 174);
+    height: 50px;
+
+    border-radius: 4px;
+}
+div.cta input ~ span{
+    position:absolute;
+    left: 12px;
+    top:19px;
+    z-index: 3;
+    color:#aaa;
+    transition: all 0.15s ease;
+    pointer-events: none;
+    font-size: 15px;
+}
+div.cta input:focus{
+    padding-top: 19px;
+    padding-bottom: 11px;
+}
+div.cta input:focus ~ span{
+    top: 8px;
+    font-size:.8rem;
+}
+div.cta button{
+    font-size: 0.8rem;
+    background-color: #e50914;
+    border-radius:2px;
+    color: #fff;
+    border:0;
+    border-radius: 4px;
+    margin-left: 8px;
+    height: 50px;
+    width: 200px;
+}
+@media screen and (min-width:550px) {
+    div.cta button{
+        font-size:1.5rem;
+        font-weight: 500;
+    }
+}
