@@ -266,7 +266,32 @@ section div.texts p{
     margin-top: 50px;
 }
 
-/* @media screen and (min-width:550px) {
+@media screen and (min-width:550px) {
     section:nth-child(even) div.texts {
+        order: 2;
     }
-} */
+}
+section div.download{
+    border: 2px solid #666;
+    border-radius: 15px;
+    padding: 10px;
+    height:95px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 130px;
+    width: 350px;
+    left: 25%;
+    background-color: #000;
+    gap: 15px;
+    grid-template-columns: max-content 1fr max-content;
+}
+.media.s2 .phone-img{
+    width: 550px;
+    margin-left: 40px;
+}
+section div.download img{
+    height: 75px;
+    width:auto;
+}
