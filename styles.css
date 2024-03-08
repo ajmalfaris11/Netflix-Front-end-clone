@@ -295,3 +295,16 @@ section div.download img{
     height: 75px;
     width:auto;
 }
+
+.media.s3 img{
+    width: 550px;
+    position:absolute;
+    z-index: 10;
+}
+.media.s3 video{
+    width: 62%;
+    position:absolute;
+    z-index: 9;
+    margin-top: 50px;
+    margin-left: 100px;
+}
