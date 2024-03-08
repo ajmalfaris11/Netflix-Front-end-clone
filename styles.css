@@ -208,7 +208,7 @@ section{
     align-items: center;
     border-top: 8px solid #222;
     text-align: center;
-    height: 500px;
+    height: 600px;
 }
 @media screen and (min-width:550px) {
     section{
@@ -280,7 +280,7 @@ section div.download{
     text-align: center;
     align-items: center;
     position: absolute;
-    bottom: 130px;
+    bottom: 200px;
     width: 350px;
     left: 25%;
     background-color: #000;
@@ -307,4 +307,88 @@ section div.download img{
     z-index: 9;
     margin-top: 50px;
     margin-left: 100px;
+}
+div.faq{
+    padding: 70px 30px;
+}
+div.faq h1{
+    font-size: 1.625rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+@media screen and (min-width:550px) {
+    div.faq h1{
+        font-size: 3.125rem;
+    }
+}
+div.questions{
+    max-width:98%;
+    margin: 0 auto;
+    font-size: 1rem;
+
+}
+@media screen and (min-width:550px) {
+    div.questions{
+    font-size: 1.625rem;
+    }
+}
+div.question{
+    position:relative;
+    background-color: #2d2d2d;
+    margin-bottom: 10px;
+    transition: 0.5s;
+
+}
+div.question:hover{
+    background-color: rgb(57, 57, 57);
+
+}
+div.question svg{
+    width: 30px;
+    height: 30px;
+    right:30px;
+    top:20px;
+    position:absolute;
+    transform: rotate(45deg);
+    transition: all 0.2s ease;
+}
+div.question .header{
+    display:block;
+    padding: 28px 30px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+div.question div.answer{
+    padding: 0 30px;
+    max-height:0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+div.question input[type="checkbox"]{
+    display: none;
+}
+div.question input[type="checkbox"]:checked ~ div.answer{
+    padding: 30px 30px;
+    max-height:600px;
+}
+div.question input[type="checkbox"]:checked ~ .header svg{
+    transform: rotate(180deg);
+}
+div.faq h3{
+    font-weight: normal;
+    text-align: center;
+    margin: 40px 0 20px;
+}
+div.faq h5{
+    font-weight: normal;
+    text-align: center;
+    margin: 40px 0 20px;
+
+}
+div.faq form{
+    max-width:635px;
+    margin: 0 auto;
+}
+div.faq form div + div{
+    text-align: center;
 }
