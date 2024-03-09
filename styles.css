@@ -68,7 +68,7 @@ header div.select{
         margin-right: 30px;
     }
 }
-header div.select .translate-icon{
+   .translate-icon{
     position:absolute;
     margin-top:6px;
     margin-left: 10px;
@@ -210,14 +210,24 @@ section{
     border-top: 8px solid #222;
     text-align: center;
     height: 600px;
+    
 }
 @media screen and (min-width:550px) {
     section{
         grid-template-columns: 1fr 1fr;
         text-align: left;
+        padding-inline:10px;
+    }
+}
+@media screen and (max-width:550px) {
+    section{
+        grid-template-columns: 1fr;
+        text-align: left;
        
     }
 }
+
+
 section.last{
     border-bottom: 8px solid #222;
 }
@@ -391,4 +401,63 @@ div.faq form{
 }
 div.faq form div + div{
     text-align: center;
+}
+
+/* =========== Footer section start from here ========== */
+
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    border-top: 8px solid #222;
+    padding: 30px;
+    font-size: 14px;
+    padding-block: 70px;
+}
+
+footer a{
+    color: rgba(255, 255, 255, 0.7);
+
+} 
+.table-style {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.table-style li {
+    padding-block: 10px;
+    text-align: start; 
+}
+
+@media screen and (max-width: 550px) {
+    .table-style {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+footer .select{
+    height: 35px;
+    width: 130px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-block: 20px;
+    border: #666 solid 1px;
+
+}
+
+footer select{
+    background: transparent;
+    color:#fff;
+    border: none;
+}
+
+
+footer .translate-icon{
+   position: static;
+   margin-top: 10px;
 }
