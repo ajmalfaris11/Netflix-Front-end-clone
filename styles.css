@@ -31,11 +31,12 @@ header a.logo{
 header .logo svg{
     fill: #e50914;
     height: 27px;
-    margin-left: -30px;
 }
 @media screen and (min-width:550px) {
     header .logo svg{
         height: 40px;
+        margin-left: -30px;
+
     }
 
 }
@@ -55,7 +56,7 @@ header select{
     color:#fff;
     padding: 6px 0px 6px 30px;
     border-radius: 3px;
-    width: 120px;
+    width: 50px;
 }
 header div.select{
     display:inline-block;
@@ -66,6 +67,11 @@ header div.select{
 @media screen and (min-width:550px) {
     header div.select{
         margin-right: 30px;
+
+    }
+    header select{
+        width: 120px;
+
     }
 }
    .translate-icon{
@@ -194,13 +200,12 @@ div.cta button{
     height: 50px;
     width: 200px;
 }
-@media screen and (min-width:550px) {
-    div.cta button{
-        font-size:1.5rem;
-        font-weight: 500;
-    }
-}
 
+
+div.cta button{
+    font-size:1.2rem;
+    font-weight: 600;
+}
 
 section{
     display:grid;
@@ -209,7 +214,7 @@ section{
     align-items: center;
     border-top: 8px solid #222;
     text-align: center;
-    height: 600px;
+    min-height: 600px;
     
 }
 @media screen and (min-width:550px) {
@@ -223,6 +228,9 @@ section{
     section{
         grid-template-columns: 1fr;
         text-align: left;
+        height: auto;
+        padding-top: 100px;
+        justify-content: center;
        
     }
 }
@@ -298,8 +306,8 @@ section div.download{
     grid-template-columns: max-content 1fr max-content;
 }
 .media.s2 .phone-img{
-    width: 550px;
-    margin-left: 40px;
+    width: auto;
+    height: 300px;
 }
 section div.download img{
     height: 75px;
@@ -407,16 +415,19 @@ div.faq form div + div{
 
 footer{
     width: 100%;
-    height: 400px;
+    min-height: 400px;
     background-color: black;
     border-top: 8px solid #222;
     padding: 30px;
     font-size: 14px;
-    padding-block: 70px;
+    padding-block: 50px;
+    color: #aaa;
+    font-weight: 600;
 }
 
 footer a{
     color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
 
 } 
 .table-style {
@@ -432,11 +443,7 @@ footer a{
     text-align: start; 
 }
 
-@media screen and (max-width: 550px) {
-    .table-style {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+
 
 footer .select{
     height: 35px;
@@ -460,4 +467,76 @@ footer select{
 footer .translate-icon{
    position: static;
    margin-top: 10px;
+}
+
+button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+footer span{
+    font-weight: 400;
+}
+
+@media screen and (max-width: 925px) {
+    body{
+        overflow-x: hidden;
+    }
+    section{
+        grid-template-columns: 1fr;
+        height:1000px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         margin: 0;
+         padding: 0;
+         align-items: center;
+         align-content: center;
+         padding-block: 20px;
+    }
+    img{
+        margin: 0;
+        padding: 0;
+    }
+    .texts{
+        margin: 0;
+        padding: 0;
+    }
+    .media{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .phone-img{
+        margin: 0;
+        width: auto;
+    }
+    section div.download{
+        padding-bottom: 0px;
+    }
+    video{
+        width: 80%;
+    }
+ .table-style {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .table-style {
+        grid-template-columns: repeat(1, 1fr);
+    }
+ 
+ 
+}
+
+@media screen and (max-width: 550px)  {
+    .table-style {
+        grid-template-columns: repeat(1, 1fr);
+    }
+ 
+ 
 }
