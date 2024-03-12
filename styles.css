@@ -300,14 +300,17 @@ section div.download{
     position: absolute;
     bottom: 200px;
     width: 350px;
-    left: 25%;
     background-color: #000;
     gap: 15px;
     grid-template-columns: max-content 1fr max-content;
 }
+.media.s2 {
+    display: flex;
+    justify-content: center;
+}
 .media.s2 .phone-img{
     width: auto;
-    height: 300px;
+    height: 400px;
 }
 section div.download img{
     height: 75px;
@@ -485,15 +488,15 @@ footer span{
     }
     section{
         grid-template-columns: 1fr;
-        height:1000px;
          display: flex;
          flex-direction: column;
          justify-content: center;
          margin: 0;
-         padding: 0;
+         padding: 50px;
          align-items: center;
          align-content: center;
-         padding-block: 20px;
+         padding-block: 50px;
+         
     }
     img{
         margin: 0;
@@ -508,20 +511,16 @@ footer span{
         padding: 0;
         display: flex;
         justify-content: center;
-        overflow: hidden;
     }
-    .phone-img{
-        margin: 0;
-        width: auto;
-    }
-    section div.download{
-        padding-bottom: 0px;
-    }
+   
     video{
         width: 80%;
     }
  .table-style {
         grid-template-columns: repeat(2, 1fr);
+    }
+    section div.download{
+        bottom: 100px;
     }
 }
 
@@ -529,14 +528,31 @@ footer span{
     .table-style {
         grid-template-columns: repeat(1, 1fr);
     }
- 
+
+  section{
+    padding-inline: 0px;
+    height: 500px;
+    margin-block: 50px;
+    padding-top:50px;
+  }
+
+  .download{
+    bottom: 50px;
+
+  }
+  section div.download{
+    width: 250px;
+    height: 75px;
+    bottom: 10px;
+  }
+  section div.download img{
+    height: 50px;
+  }
+  .table-style {
+    grid-template-columns: repeat(1, 1fr);
+
+}
+
  
 }
 
-@media screen and (max-width: 550px)  {
-    .table-style {
-        grid-template-columns: repeat(1, 1fr);
-    }
- 
- 
-}
