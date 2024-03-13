@@ -210,12 +210,11 @@ div.cta button{
 section{
     display:grid;
     grid-template-columns: 1fr;
-    gap: 46px;
     align-items: center;
     border-top: 8px solid #222;
     text-align: center;
     min-height: 600px;
-    
+    gap: 100px;
 }
 @media screen and (min-width:550px) {
     section{
@@ -229,7 +228,6 @@ section{
         grid-template-columns: 1fr;
         text-align: left;
         height: auto;
-        padding-top: 100px;
         justify-content: center;
        
     }
@@ -239,14 +237,15 @@ section{
 section.last{
     border-bottom: 8px solid #222;
 }
-section div.texts{
+ div.texts{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    align-items: center;
     height: 100%;
     text-align: start;
-    padding-inline: 30px;
+    padding-inline: 50px;
 }
 section div.texts h1{
     font-size: 1.625rem;
@@ -270,11 +269,10 @@ section div.texts p{
     width: 100%;
     height: 100%;
     margin-top: 100px;
-    margin-left: -30px;
+    height:500px;
 }
 
 .media.s1 img{
-    width: 550px;
     position:absolute;
     z-index: 10;
 }
@@ -289,6 +287,7 @@ section div.texts p{
         order: 2;
     }
 }
+
 section div.download{
     border: 2px solid #666;
     border-radius: 15px;
@@ -298,7 +297,7 @@ section div.download{
     text-align: center;
     align-items: center;
     position: absolute;
-    bottom: 200px;
+    bottom: 60px;
     width: 350px;
     background-color: #000;
     gap: 15px;
@@ -307,27 +306,31 @@ section div.download{
 .media.s2 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    background-color: red;
 }
-.media.s2 .phone-img{
-    width: auto;
-    height: 400px;
+
+.phone-img{
+    width: 100%;
 }
 section div.download img{
     height: 75px;
     width:auto;
 }
-
+.media.s3{
+    display: flex;
+    justify-content: center;
+}
 .media.s3 img{
-    width: 550px;
     position:absolute;
     z-index: 10;
 }
 .media.s3 video{
-    width: 350px;
+    margin-top: 50px;
+    width: 65%;
     position:absolute;
     z-index: 9;
-    margin-top: 50px;
-    margin-left: 100px;
 }
 div.faq{
     padding: 70px 30px;
@@ -503,8 +506,7 @@ footer span{
         padding: 0;
     }
     .texts{
-        margin: 0;
-        padding: 0;
+        padding-inline: 50px;
     }
     .media{
         margin: 0;
@@ -532,8 +534,7 @@ footer span{
   section{
     padding-inline: 0px;
     height: 500px;
-    margin-block: 50px;
-    padding-top:50px;
+    margin-bottom: 50px;
   }
 
   .download{
@@ -552,7 +553,14 @@ footer span{
     grid-template-columns: repeat(1, 1fr);
 
 }
-
+/* .phone-img{
+    width: 1000px;
+} */
+section div.texts{
+    text-align:start;
+    align-items: start;
+    align-content: strart;
+}
  
 }
 
