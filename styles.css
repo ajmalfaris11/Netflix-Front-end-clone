@@ -216,6 +216,7 @@ section{
     min-height: 600px;
     gap: 100px;
 }
+
 @media screen and (min-width:550px) {
     section{
         grid-template-columns: 1fr 1fr;
@@ -268,7 +269,6 @@ section div.texts p{
     position:relative;
     width: 100%;
     height: 100%;
-    margin-top: 100px;
     height:500px;
 }
 
@@ -308,11 +308,11 @@ section div.download{
     justify-content: center;
     align-items: center;
     margin-top: 0;
-    background-color: red;
 }
 
 .phone-img{
     width: 100%;
+    max-width: 500px;
 }
 section div.download img{
     height: 75px;
@@ -498,7 +498,6 @@ footer span{
          padding: 50px;
          align-items: center;
          align-content: center;
-         padding-block: 50px;
          
     }
     img{
@@ -507,6 +506,7 @@ footer span{
     }
     .texts{
         padding-inline: 50px;
+        height: 100%;
     }
     .media{
         margin: 0;
@@ -534,6 +534,7 @@ footer span{
   section{
     padding-inline: 0px;
     height: 500px;
+    gap: 10px;
     margin-bottom: 50px;
   }
 
@@ -553,14 +554,37 @@ footer span{
     grid-template-columns: repeat(1, 1fr);
 
 }
-/* .phone-img{
-    width: 1000px;
-} */
+
 section div.texts{
-    text-align:start;
     align-items: start;
-    align-content: strart;
+    align-content: start;
 }
  
 }
 
+/* =========== Crolling bar ========== */
+::-webkit-scrollbar {
+    width: 6px;
+    height:0px;
+   
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color:#0f0f0f
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #7c7c7c;
+    border-radius: 10px;
+   
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  
+  
