@@ -10,7 +10,7 @@ This project is a simple frontend clone of the Netflix website, built using HTML
 
 ## Screenshots
 
-![Screenshot of Netflix Clone](images/netflix%2poster.png)
+![Screenshot of Netflix Clone](images/netflixposter.png)
 
 ## Getting Started
 
