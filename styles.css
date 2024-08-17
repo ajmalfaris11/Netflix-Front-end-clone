@@ -1,49 +1,57 @@
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-img{
+
+img {
     max-width: 100%;
 }
-body{
-    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #000;
-    color:#fff;
+    color: #fff;
 }
-header{
+
+header {
     display: grid;
     grid-template-columns: max-content 1fr;
     padding: 26px 20px;
-    position:absolute;
+    position: absolute;
     width: 100%;
     z-index: 5;
 }
+
 @media screen and (min-width:550px) {
-    header{
+    header {
         padding: 26px 56px;
     }
 }
 
-header a.logo{
+header a.logo {
     display: block;
 }
-header .logo svg{
+
+header .logo svg {
     fill: #e50914;
     height: 27px;
 }
+
 @media screen and (min-width:550px) {
-    header .logo svg{
+    header .logo svg {
         height: 40px;
         margin-left: -30px;
 
     }
 
 }
+
 header div+div {
     text-align: right;
 }
-header a.button{
+
+header a.button {
     display: inline-block;
     background-color: #e50914;
     color: #fff;
@@ -51,119 +59,139 @@ header a.button{
     padding: 7px 10px;
     border-radius: 4px;
 }
-header select{
+
+header select {
     background: transparent;
-    color:#fff;
+    color: #fff;
     padding: 6px 0px 6px 30px;
     border-radius: 3px;
     width: 50px;
 }
-header div.select{
-    display:inline-block;
+
+header div.select {
+    display: inline-block;
     margin-right: 10px;
     padding-left: 10px;
 }
 
 @media screen and (min-width:550px) {
-    header div.select{
+    header div.select {
         margin-right: 30px;
 
     }
-    header select{
+
+    header select {
         width: 120px;
 
     }
 }
-   .translate-icon{
-    position:absolute;
-    margin-top:6px;
+
+.translate-icon {
+    position: absolute;
+    margin-top: 6px;
     margin-left: 10px;
     color: rgb(255, 255, 255);
     font-size: 16px;
 }
 
-div.splash{
-    position:relative;
+div.splash {
+    position: relative;
 }
-div.splash div.gradient{
-    background: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
-    position:absolute;
-    inset:0;
+
+div.splash div.gradient {
+    background: linear-gradient(to top, rgba(0, 0, 0, .8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .8) 100%);
+    position: absolute;
+    inset: 0;
 }
-div.splash div.background{
-    position:absolute;
-    z-index:1;
-    inset:0;
+
+div.splash div.background {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
 }
-div.splash div.background img{
-    height:100%;
+
+div.splash div.background img {
+    height: 100%;
     width: 100%;
     opacity: 0.6;
     object-fit: cover;
 }
-div.splash div.content{
+
+div.splash div.content {
     padding: 95px 20px;
     max-width: 655px;
     margin: 0 auto;
     display: grid;
     align-items: center;
     text-align: center;
-    position:relative;
-    z-index:3;
+    position: relative;
+    z-index: 3;
 }
+
 @media screen and (min-width:550px) {
-    div.splash div.content{
+    div.splash div.content {
         padding-top: 235px;
         padding-bottom: 185px;
     }
 }
-div.splash h1, div.splash h2, div.splash h3{
+
+div.splash h1,
+div.splash h2,
+div.splash h3 {
     font-weight: normal;
 }
-div.splash h1{
-    font-size: 1.75rem ;
+
+div.splash h1 {
+    font-size: 1.75rem;
     font-weight: bold;
 }
-div.splash h2{
+
+div.splash h2 {
     font-size: 1.125rem;
     margin-top: 13px;
     margin-bottom: 29px;
 }
-div.splash h3{
+
+div.splash h3 {
     font-size: 1.125rem;
 }
+
 @media screen and (min-width: 550px) {
-    div.splash h1{
+    div.splash h1 {
         font-size: 3.125rem;
         font-weight: bold;
     }
-    div.splash h2{
+
+    div.splash h2 {
         font-size: 1.625rem;
         margin-top: 13px;
         margin-bottom: 29px;
     }
-    div.splash h3{
+
+    div.splash h3 {
         font-size: 1.2rem;
     }
 }
 
-div.cta form{
-    position:relative;
-    display:grid;
+div.cta form {
+    position: relative;
+    display: grid;
     grid-template-columns: 1fr;
     margin: 20px 20px 0;
     row-gap: 15px;
 }
+
 @media screen and (min-width:550px) {
-    div.cta form{
-        display:grid;
+    div.cta form {
+        display: grid;
         grid-template-columns: 1fr max-content;
     }
 }
-div.cta input{
+
+div.cta input {
     padding: 15px 10px;
-    font-size:1.2rem;
-    width:100%;
+    font-size: 1.2rem;
+    width: 100%;
     background-color: #000;
     opacity: 0.5;
     border: 1px solid rgb(174, 174, 174);
@@ -171,30 +199,34 @@ div.cta input{
 
     border-radius: 4px;
 }
-div.cta input ~ span{
-    position:absolute;
+
+div.cta input~span {
+    position: absolute;
     left: 12px;
-    top:19px;
+    top: 19px;
     z-index: 3;
-    color:#aaa;
+    color: #aaa;
     transition: all 0.15s ease;
     pointer-events: none;
     font-size: 15px;
 }
-div.cta input:focus{
+
+div.cta input:focus {
     padding-top: 19px;
     padding-bottom: 11px;
 }
-div.cta input:focus ~ span{
+
+div.cta input:focus~span {
     top: 8px;
-    font-size:.8rem;
+    font-size: .8rem;
 }
-div.cta button{
+
+div.cta button {
     font-size: 0.8rem;
     background-color: #e50914;
-    border-radius:2px;
+    border-radius: 2px;
     color: #fff;
-    border:0;
+    border: 0;
     border-radius: 4px;
     margin-left: 8px;
     height: 50px;
@@ -202,13 +234,13 @@ div.cta button{
 }
 
 
-div.cta button{
-    font-size:1.2rem;
+div.cta button {
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
-section{
-    display:grid;
+section {
+    display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     border-top: 8px solid #222;
@@ -218,27 +250,29 @@ section{
 }
 
 @media screen and (min-width:550px) {
-    section{
+    section {
         grid-template-columns: 1fr 1fr;
         text-align: left;
-        padding-inline:10px;
+        padding-inline: 10px;
     }
 }
+
 @media screen and (max-width:550px) {
-    section{
+    section {
         grid-template-columns: 1fr;
         text-align: left;
         height: auto;
         justify-content: center;
-       
+
     }
 }
 
 
-section.last{
+section.last {
     border-bottom: 8px solid #222;
 }
- div.texts{
+
+div.texts {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -248,36 +282,42 @@ section.last{
     text-align: start;
     padding-inline: 50px;
 }
-section div.texts h1{
+
+section div.texts h1 {
     font-size: 1.625rem;
     margin-bottom: 20px;
 }
+
 @media screen and (min-width:550px) {
-    section div.texts h1{
+    section div.texts h1 {
         font-size: 3.125rem;
     }
 }
-section div.texts p{
+
+section div.texts p {
     font-size: 1rem;
 }
+
 @media screen and (min-width:550px) {
-    section div.texts p{
+    section div.texts p {
         font-size: 1.4rem;
     }
 }
-.media{
-    position:relative;
+
+.media {
+    position: relative;
     width: 100%;
     height: 100%;
-    height:500px;
+    height: 500px;
 }
 
-.media.s1 img{
-    position:absolute;
+.media.s1 img {
+    position: absolute;
     z-index: 10;
 }
-.media.s1 video{
-    position:absolute;
+
+.media.s1 video {
+    position: absolute;
     z-index: 9;
     margin-top: 50px;
 }
@@ -288,11 +328,11 @@ section div.texts p{
     }
 }
 
-section div.download{
+section div.download {
     border: 2px solid #666;
     border-radius: 15px;
     padding: 10px;
-    height:95px;
+    height: 95px;
     display: grid;
     text-align: center;
     align-items: center;
@@ -303,6 +343,7 @@ section div.download{
     gap: 15px;
     grid-template-columns: max-content 1fr max-content;
 }
+
 .media.s2 {
     display: flex;
     justify-content: center;
@@ -310,116 +351,137 @@ section div.download{
     margin-top: 0;
 }
 
-.phone-img{
+.phone-img {
     width: 100%;
     max-width: 500px;
 }
-section div.download img{
+
+section div.download img {
     height: 75px;
-    width:auto;
+    width: auto;
 }
-.media.s3{
+
+.media.s3 {
     display: flex;
     justify-content: center;
 }
-.media.s3 img{
-    position:absolute;
+
+.media.s3 img {
+    position: absolute;
     z-index: 10;
 }
-.media.s3 video{
+
+.media.s3 video {
     margin-top: 50px;
     width: 65%;
-    position:absolute;
+    position: absolute;
     z-index: 9;
 }
-div.faq{
+
+div.faq {
     padding: 70px 30px;
 }
-div.faq h1{
+
+div.faq h1 {
     font-size: 1.625rem;
     text-align: center;
     margin-bottom: 40px;
 }
+
 @media screen and (min-width:550px) {
-    div.faq h1{
+    div.faq h1 {
         font-size: 3.125rem;
     }
 }
-div.questions{
-    max-width:98%;
+
+div.questions {
+    max-width: 98%;
     margin: 0 auto;
     font-size: 1rem;
 
 }
+
 @media screen and (min-width:550px) {
-    div.questions{
-    font-size: 1.625rem;
+    div.questions {
+        font-size: 1.625rem;
     }
 }
-div.question{
-    position:relative;
+
+div.question {
+    position: relative;
     background-color: #2d2d2d;
     margin-bottom: 10px;
     transition: 0.5s;
 
 }
-div.question:hover{
+
+div.question:hover {
     background-color: rgb(57, 57, 57);
 
 }
-div.question svg{
+
+div.question svg {
     width: 30px;
     height: 30px;
-    right:30px;
-    top:20px;
-    position:absolute;
+    right: 30px;
+    top: 20px;
+    position: absolute;
     transform: rotate(45deg);
     transition: all 0.2s ease;
 }
-div.question .header{
-    display:block;
+
+div.question .header {
+    display: block;
     padding: 28px 30px;
     border-bottom: 1px solid #000;
     cursor: pointer;
 }
-div.question div.answer{
+
+div.question div.answer {
     padding: 0 30px;
-    max-height:0;
+    max-height: 0;
     overflow: hidden;
     transition: all 0.2s ease;
 }
-div.question input[type="checkbox"]{
+
+div.question input[type="checkbox"] {
     display: none;
 }
-div.question input[type="checkbox"]:checked ~ div.answer{
+
+div.question input[type="checkbox"]:checked~div.answer {
     padding: 30px 30px;
-    max-height:600px;
+    max-height: 600px;
 }
-div.question input[type="checkbox"]:checked ~ .header svg{
+
+div.question input[type="checkbox"]:checked~.header svg {
     transform: rotate(180deg);
 }
-div.faq h3{
+
+div.faq h3 {
     font-weight: normal;
     text-align: center;
     margin: 40px 0 20px;
 }
-div.faq h5{
+
+div.faq h5 {
     font-weight: normal;
     text-align: center;
     margin: 40px 0 20px;
 
 }
-div.faq form{
-    max-width:635px;
+
+div.faq form {
+    max-width: 635px;
     margin: 0 auto;
 }
-div.faq form div + div{
+
+div.faq form div+div {
     text-align: center;
 }
 
 /* =========== Footer section start from here ========== */
 
-footer{
+footer {
     width: 100%;
     min-height: 400px;
     background-color: black;
@@ -431,11 +493,12 @@ footer{
     font-weight: 600;
 }
 
-footer a{
+footer a {
     color: rgba(255, 255, 255, 0.7);
     font-weight: 400;
 
-} 
+}
+
 .table-style {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -446,12 +509,12 @@ footer a{
 
 .table-style li {
     padding-block: 10px;
-    text-align: start; 
+    text-align: start;
 }
 
 
 
-footer .select{
+footer .select {
     height: 35px;
     width: 130px;
     border-radius: 4px;
@@ -463,65 +526,72 @@ footer .select{
 
 }
 
-footer select{
+footer select {
     background: transparent;
-    color:#fff;
+    color: #fff;
     border: none;
 }
 
 
-footer .translate-icon{
-   position: static;
-   margin-top: 10px;
+footer .translate-icon {
+    position: static;
+    margin-top: 10px;
 }
 
-button{
+button {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-footer span{
+
+footer span {
     font-weight: 400;
 }
 
 @media screen and (max-width: 925px) {
-    body{
+    body {
         overflow-x: hidden;
     }
-    section{
+
+    section {
         grid-template-columns: 1fr;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         margin: 0;
-         padding: 50px;
-         align-items: center;
-         align-content: center;
-         
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 50px;
+        align-items: center;
+        align-content: center;
+
     }
-    img{
+
+    img {
         margin: 0;
         padding: 0;
     }
-    .texts{
+
+    .texts {
         padding-inline: 50px;
         height: 100%;
     }
-    .media{
+
+    .media {
         margin: 0;
         padding: 0;
         display: flex;
         justify-content: center;
     }
-   
-    video{
+
+    video {
         width: 80%;
     }
- .table-style {
+
+    .table-style {
         grid-template-columns: repeat(2, 1fr);
     }
-    section div.download{
+
+    section div.download {
         bottom: 100px;
     }
 }
@@ -531,61 +601,61 @@ footer span{
         grid-template-columns: repeat(1, 1fr);
     }
 
-  section{
-    padding-inline: 0px;
-    height: 500px;
-    gap: 10px;
-    margin-bottom: 50px;
-  }
+    section {
+        padding-inline: 0px;
+        height: 500px;
+        gap: 10px;
+        margin-bottom: 50px;
+    }
 
-  .download{
-    bottom: 50px;
+    .download {
+        bottom: 50px;
 
-  }
-  section div.download{
-    width: 250px;
-    height: 75px;
-    bottom: 10px;
-  }
-  section div.download img{
-    height: 50px;
-  }
-  .table-style {
-    grid-template-columns: repeat(1, 1fr);
+    }
 
-}
+    section div.download {
+        width: 250px;
+        height: 75px;
+        bottom: 10px;
+    }
 
-section div.texts{
-    align-items: start;
-    align-content: start;
-}
- 
+    section div.download img {
+        height: 50px;
+    }
+
+    .table-style {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    section div.texts {
+        align-items: start;
+        align-content: start;
+    }
+
 }
 
 /* =========== Scrolling bar ========== */
 
 ::-webkit-scrollbar {
     width: 6px;
-    height:0px;
-   
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background-color:#0f0f0f
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+    height: 0px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #0f0f0f
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #7c7c7c;
     border-radius: 10px;
-   
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
 
-  
-  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
