@@ -562,7 +562,8 @@ section div.texts{
  
 }
 
-/* =========== Crolling bar ========== */
+/* =========== Scrolling bar ========== */
+
 ::-webkit-scrollbar {
     width: 6px;
     height:0px;
