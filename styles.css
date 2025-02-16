@@ -319,7 +319,8 @@ section div.texts p {
 .media.s1 video {
     position: absolute;
     z-index: 9;
-    margin-top: 50px;
+    margin-top: 14%;
+    margin-left: 10%;
 }
 
 @media screen and (min-width:550px) {
